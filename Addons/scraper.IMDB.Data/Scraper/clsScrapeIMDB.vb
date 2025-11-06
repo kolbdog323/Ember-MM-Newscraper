@@ -974,7 +974,7 @@ Public Class Scraper
 
         For Each CreditCategory In CreditCategoriesList
             If CreditCategory.Id IsNot Nothing AndAlso CreditCategory.Section IsNot Nothing Then
-                If String.Equals(CreditCategory.Id, "cast", StringComparison.OrdinalIgnoreCase) Then
+                If String.Equals(CreditCategory.Id, "amzn1.imdb.concept.name_credit_group.7caf7d16-5db9-4f4f-8864-d4c6e711c686", StringComparison.OrdinalIgnoreCase) Then
                     'Loop through all creditconnection edges wich contains cast members
                     For Each json_section_item As CategoryItem In CreditCategory.Section.Items
                         Dim nActor As New MediaContainers.Person
@@ -1093,7 +1093,7 @@ Public Class Scraper
             If CreditCategoriesList IsNot Nothing Then
                 For Each CreditCategory In CreditCategoriesList
                     If CreditCategory.Id IsNot Nothing AndAlso CreditCategory.Section IsNot Nothing Then
-                        If String.Equals(CreditCategory.Id, "writer", StringComparison.OrdinalIgnoreCase) Then
+                        If String.Equals(CreditCategory.Id, "amzn1.imdb.concept.name_credit_category.c84ecaff-add5-4f2e-81db-102a41881fe3", StringComparison.OrdinalIgnoreCase) Then
                             'Loop all creditconnection edges wich contains writer members
 
                             For Each json_section_item As CategoryItem In CreditCategory.Section.Items
